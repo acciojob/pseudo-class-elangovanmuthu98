@@ -3,7 +3,26 @@
 	margin:20px;
 	
 }
-span{
-	color:#f00;
-	font-size:20px;
+#container::before{
+	
+	  content: "Before Element";
+            display: block;
+            position: absolute;
+            font-size: 20px;
+            color: #f00;
 }
+        #container::after {
+            content: "After Element";
+            display: block;
+            position: absolute;
+            font-size: 20px;
+            color: #f00;
+        }
+
+        #container::before {
+            left: 0;
+        }
+
+        #container::after {
+	right:0;
+		}
